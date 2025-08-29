@@ -101,7 +101,7 @@ for idata = 1
         aRuntime = mean(runtime);
         PResBest = ResBest(dataIndex, :);
         PResStd = ResStd(dataIndex, :);
-        save([resultdir2,char('CAbCF5_3_') char(dataname(idata)), char(numname(dataIndex)), 'ACC_', num2str(max(ACC(:))), '_result.mat'], 'ACC', 'NMI', 'Purity', 'aRuntime', ...
+        save([resultdir2,char('JVILG_') char(dataname(idata)), char(numname(dataIndex)), 'ACC_', num2str(max(ACC(:))), '_result.mat'], 'ACC', 'NMI', 'Purity', 'aRuntime', ...
             'PResBest', 'PResStd','iter','TempBeta','TempLambda','TempPhi','TempP','m_list','dim');
     end
     save([resultdir2, char(dataname(idata)), '_result.mat'], 'ResBest', 'ResStd');
